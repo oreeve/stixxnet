@@ -1,0 +1,40 @@
+body {
+  background-color: #1F1F1F;
+}
+
+.navbar {
+  background-color: #000;
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #eee;
+}
+
+.row {
+  height: 100%;
+  background-image: url(http://cd8ba0b44a15c10065fd-24461f391e20b7336331d5789078af53.r23.cf1.rackcdn.com/plex.vanillacommunity.com/ipb/monthly_02_2015/post-271677-0-58538300-1423691133.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.hero-content {
+  height: 70vh;
+  width: 100vw;
+}
+
+.hero-button {
+  margin-top: 20%;
+}
+
+.plex-requests {
+  border: none;
+  background-color: #f9be03;
+}
+/*
+.hero-content p {
+  color: #eee;
+  margin-top: 400px;
+}*/
