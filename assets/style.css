@@ -32,6 +32,12 @@ body {
   /*margin-top: 50px;*/
 }
 
+.wide h1 {
+  color: #eee;
+  text-align: center;
+  padding-top: 180px;
+}
+
 .box-item-container {
   padding-top: 10px;
   padding-bottom: 220px;
