@@ -1,10 +1,14 @@
 body {
   background-color: #1F1F1F;
+  font-family: 'Athiti', sans-serif;
 }
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
+  height: 60px;
+  position: absolute;
+  top: 0;
 }
 
 .navbar-header {
@@ -29,13 +33,34 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  /*margin-top: 50px;*/
+  margin-top: -20px;
+  position: relative;
 }
 
 .wide h1 {
   color: #eee;
   text-align: center;
   padding-top: 180px;
+}
+
+.wide .bottom-nav {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-nav .icons {
+  left: 6%;
+}
+
+.bottom-nav span {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .box-item-container {
@@ -63,6 +88,9 @@ body {
     .box-item {
       padding: 50px;
       margin-bottom: 50px;
+    }
+    .bottom-nav .icons {
+      left: 30%;
     }
   }
 
