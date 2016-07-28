@@ -1,5 +1,5 @@
 body {
-  background-color: #1F1F1F;
+  background-color: rgba(31, 31, 31, 1);
   font-family: 'Athiti', sans-serif;
 }
 
@@ -73,12 +73,36 @@ body {
 .box-item {
   text-align: center;
   color: #eee;
-  border: solid white 1px;
+  border: solid #eee 1px;
   margin: 4% 3% 4% 3%;
   padding: 30px;
   height: 300px;
   background-color: rgba(80, 170, 255, 0.3);
   border-radius: 2px;
+}
+
+.box-item p {
+  font-size: 18px;
+}
+
+.box-item h2, .box-item p {
+  text-shadow: 2px 2px black;
+}
+
+.box-item:first-of-type {
+  background: url('images/StixxServers.jpg') no-repeat center center;
+  background-position: top;
+  background-size: cover;
+}
+
+.box-item:nth-of-type(2) {
+  background: url(https://static.plex.tv/assets/img/googleplus-photo-2dd7a8ed5c3577eb826cebdfe3edda76.png) no-repeat center center;
+  background-size: cover;
+}
+
+.box-item:last-of-type {
+  background: url('images/battlenet.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 @media (max-width: 990px) {
@@ -100,4 +124,8 @@ body {
   border: solid white 1px;
   border-radius: 2px;
   background-color: rgba(249, 190, 3, 1);
+}
+
+.btn img {
+  height: 25px;
 }
