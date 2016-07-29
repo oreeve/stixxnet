@@ -6,30 +6,51 @@ body {
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  height: 60px;
-  position: absolute;
-  top: 0;
+  height: 80px;
 }
 
-.navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  margin-top: -2.5%;
 }
 
-.navbar-brand {
+.navbar-nav li {
   float: none;
+  display: inline-block;
 }
 
-.navbar-default .navbar-brand {
-    color: #eee;
+.navbar-default .navbar-nav > li > span {
+  text-align: center;
+  color: #eee;
+  font-size: 18px;
+  padding-right: 60px;
+}
+.navbar-default .navbar-nav > li > span > a {
+  color: #eee;
+}
+
+.contact {
+	display:none;
+	position:absolute;
+	margin-left: -15%;
+	background: rgba(0, 0, 0, 0.5);
+	padding:5px;
+}
+.contact li {
+	width: 80px;
+}
+ul li:hover > ul {
+	display: block;
+}
+.contact li a {
+  color: #eee;
 }
 
 .wide {
   width: 100vw;
   height: 60vh;
-  background-image: url('images/stixxnet.jpg');
+  background-image: url('../images/stixxnet.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +67,7 @@ body {
 .wide .bottom-nav {
   height: 80px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
 }
@@ -90,18 +111,18 @@ body {
 }
 
 .box-item:first-of-type {
-  background: url('images/lightsnwires.jpg') no-repeat center center;
+  background: url('../images/lightsnwires.jpg') no-repeat center center;
   background-position: top;
   background-size: cover;
 }
 
 .box-item:nth-of-type(2) {
-  background: url('images/plexicon.png') no-repeat center center;
+  background: url('..//images/plexicon.png') no-repeat center center;
   background-size: cover;
 }
 
 .box-item:last-of-type {
-  background: url('images/battlenet.jpg') no-repeat center center;
+  background: url('../images/battlenet.jpg') no-repeat center center;
   background-size: cover;
 }
 
