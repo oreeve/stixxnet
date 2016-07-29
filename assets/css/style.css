@@ -119,7 +119,7 @@ ul li:hover > ul {
 }
 
 .box-item:nth-of-type(2) {
-  background: url('..//images/plexicon.png') no-repeat center center;
+  background: url('..//images/plexmetalbackground.png') no-repeat center center;
   background-size: cover;
 }
 
