@@ -57,14 +57,53 @@
 #overwatch img {
   width: 280px;
   margin-top: 20px;
+  margin-left: -80%;
 }
 
 #d3 img {
   width: 200px;
-  margin: 30px 0 0 50px;
+  margin-top: 20px;
+  margin-left: -60%;
 }
 
 #wow img {
   width: 110px;
-  margin: 30px 0 0 90px;
+  margin-top: 20px;
+  margin-left: -30%;
+}
+
+.characters {
+  margin-top: 70px;
+  margin-left: -7%;
+}
+
+#lemonz img {
+    margin-left: -50%;
+}
+
+#zertan img {
+  margin-left: -12%;
+}
+
+#vyse img {
+    margin-left: -5%;
+}
+
+#tweedl img {
+  width: 700px;
+  margin-top: -30%;
+  margin-left: -220%;
+}
+
+#xyvos img {
+  width: 600px;
+  margin-top: -70%;
+  margin-left: -240%;
+  position: relative;
+  z-index: -1;
+}
+
+.character-links a {
+  background-color: transparent;
+  margin-right: 20px;
 }
