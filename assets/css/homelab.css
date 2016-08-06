@@ -6,7 +6,7 @@
 .homelab {
   margin-top: 80px;
   height: 40vh;
-  background: url("");
+  background: url("../images/home_datacenter_splash.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
