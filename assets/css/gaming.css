@@ -6,7 +6,7 @@
 .gaming {
   margin-top: 80px;
   height: 40vh;
-  background: url(http://us.battle.net/heroes/static/images/game/game-header.jpg);
+  background: url("../images/game-header.jpg");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
