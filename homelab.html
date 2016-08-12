@@ -65,6 +65,46 @@
       </div>
     </div>
 
+
+
+    <div class="container">
+      <div class="row servers">
+        <div class="col-md-2">
+          <img src="assets/images/vmware.png" alt="VMware Logo" />
+        </div>
+        <div class="col-md-8">
+          <h2>STIXXNAS</h2>
+	  
+	  <h3> The Servers.</h3>
+          <p>The Stixxnas Homelab servers run across several different physical and virtualized servers. For example, the domain services run on both a physical Windows server but are duplicated on standby virtual servers for redundancy. The loss of the physical server for any reason, would cause the virtual servers to take over those tasks, allowing continued service and no outages for you, the user. </p>
+	 <p> But for why you are really here, the Plex Server, StixxPlexx. Stixxplex is fully virtualized and does not run its own physical server. The two identical boxes you can see in the Stixxnas rack with the blue and green lights are the ESXI hosts(What is exsi popup?) that do the heavy lifting for all the Plex transcoding and present the slick interface on your device. Stixxplex only ever resides on one of these servers at a time; one is constantly on standby incase there is trouble with the other. If the server running Stixxplex crashed for any reason (failed power supply, network card, melted CPU, etc) the other server would instantly take over and bring Stixxplex back up with little or no interuption to you.</p>
+	<p> The two ESXI hosts that Stixxplex lives on are whitebox servers ( custom built, not premade from Dell, HP,etc) with Xeon Processors, 32gb of ram, and 120GBs of flash storage. In real terms of use, it is enough power to run 10 full HD movie stream transcodes to users simultaneously, or over 100 Direct Play streams without a hitch. And due to the nature of the ESXI cluster, if that is one day not enough power, a new more powerful server could be added to the cluster without causing a loss of service. </p>
+ 
+      </div>
+    </div>
+
+
+
+<div class="container">
+      <div class="row servers">
+        <div class="col-md-2">
+          <img src="assets/images/synologo.png" alt="Synology Logo" />
+        </div>
+        <div class="col-md-8">
+          <h2>STIXXNAS</h2>
+	  
+	  <h3>Storage</h3>
+		<h4> Synology 1 </h4>
+          <p> Stixxnas is stored across three seperate storage devices for speed and redundancy. The primary storage device for data(the bulk of which is Movie/TV media) is a Synology DS1815+ with an expansion bay and upgraded RAM. Primarly composed of eight 4TB WD Red hard drives in a RAID6 array.(pop up what is raid) Currently, this gives StixxPlex close to 24 Terabytes of storage for its nearly 600 {home} movies and 15,000 {home} TV episodes. The expansion bay acts as backup storage array.</p>
+		<h4> Synology 2 </h4>
+          <p>The second storage device is a Synology RS815. It is an all flash array with four 250gb SSD drives setup in RAID10; this provides both an increase in speed and redundancy incase of a failed disk. This array's primary purpose is the home of all the virtual machines that run on the ESXI cluster; such as the STIXXPLEX machine that serves up the media. In the case of failure, this array can fail over to the first Synology device on its expansion volume until any issues are resolved. </p>
+		<h4> Amazon Cloud Drive </h4>
+          <p> The entire Stixxnas Homelab data including media, virtual machines, configurations etc, are all protected by the various RAID configurations to stop a failed hard drive causing data loss. However, in the unlikely event that multiple drives failed or the Apocolypse happens in the area, the entirety of Stixxnas Homelab is backed up into... "The Cloud". While there would be downtime, full backups of the entire setup would be reovered and with as little time as possible, StixxPlex would be back up and running even after catastrophic data loss.</p>
+
+
+ 
+      </div>
+    </div>
   </div>
 
 </body>
