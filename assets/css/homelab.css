@@ -21,14 +21,37 @@
   }
 }
 
+.nav-tabs {
+  padding-left: 35%;
+}
+
+.nav-tabs li {
+  font-size: 18px;
+  text-align: center;
+  width: 100px;
+}
+
+.nav-tabs li a {
+  border-radius: 0px;
+  color: white;
+}
+
+.nav-tabs li a:hover {
+  color: black;
+}
+
 .servers {
   margin: 50px 0 50px 0;
-  /*background-color: rgba(60, 60, 60, 0.5);
-  box-shadow: 2px 10px 5px #000;*/
+  /*background-color: rgba(60, 60, 60, 0.5);*/
+  /*box-shadow: 2px 10px 5px #000;*/
 }
 
 .servers h2 {
   color: #eee;
+}
+
+.servers h3 {
+  color: rgb(120, 120, 120)
 }
 
 .servers p {
