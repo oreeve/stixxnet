@@ -67,11 +67,6 @@
 
     <div class="container">
       <div class="row servers">
-        <!-- <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#stixxnas">StixxNAS</a></li>
-          <li><a data-toggle="tab" href="#servers">Servers</a></li>
-          <li><a data-toggle="tab" href="#storage">Storage</a></li>
-        </ul> -->
 
         <div class="tab-content">
           <div id="stixxnas" class="tab-pane fade in active">
@@ -84,6 +79,7 @@
               <p>Stixxnas Homelab started off as and continues to be my playground for learning and playing with new things. And of course the added bonus to the homelab is serving up this website and of course hosting StixxPlex. For those curious about the inner workings, the technical jargon, or just curious how your Plex media ends up neatly streaming to your IPAD, this page will give a brief overview of the software, hardware, and other technologies used.</p>
             </div>
           </div>
+
           <div id="servers" class="tab-pane fade">
             <div class="col-md-2">
               <img src="assets/images/vmware.png" alt="VMware Logo" />
@@ -95,6 +91,7 @@
                <p> The two ESXI hosts that Stixxplex lives on are whitebox servers ( custom built, not premade from Dell, HP,etc) with Xeon Processors, 32gb of ram, and 120GBs of flash storage. In real terms of use, it is enough power to run 10 full HD movie stream transcodes to users simultaneously, or over 100 Direct Play streams without a hitch. And due to the nature of the ESXI cluster, if that is one day not enough power, a new more powerful server could be added to the cluster without causing a loss of service. </p>
              </div>
           </div>
+          
           <div id="storage" class="tab-pane fade">
             <div class="col-md-2">
               <img src="assets/images/synologo.png" alt="Synology Logo" />
@@ -107,7 +104,7 @@
               <p>The second storage device is a Synology RS815. It is an all flash array with four 250gb SSD drives setup in RAID10; this provides both an increase in speed and redundancy incase of a failed disk. This array's primary purpose is the home of all the virtual machines that run on the ESXI cluster; such as the STIXXPLEX machine that serves up the media. In the case of failure, this array can fail over to the first Synology device on its expansion volume until any issues are resolved. </p>
               <h3> Amazon Cloud Drive </h3>
               <p> The entire Stixxnas Homelab data including media, virtual machines, configurations etc, are all protected by the various RAID configurations to stop a failed hard drive causing data loss. However, in the unlikely event that multiple drives failed or the Apocolypse happens in the area, the entirety of Stixxnas Homelab is backed up into... "The Cloud". While there would be downtime, full backups of the entire setup would be reovered and with as little time as possible, StixxPlex would be back up and running even after catastrophic data loss.</p>
-          </div>
+            </div>
           </div>
         </div>
       </div>

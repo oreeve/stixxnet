@@ -7,6 +7,8 @@
   <link href='assets/css/style.css' rel='stylesheet' media='all'>
   <link href='assets/css/gaming.css' rel='stylesheet' media='all'>
   <link href='https://fonts.googleapis.com/css?family=Khula' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -52,80 +54,112 @@
 
   <div class="container-fluid">
 
-    <div class="gaming">
+    <div class="wide gaming">
+      <div class="bottom-nav">
+        <ul class="nav nav-tabs">
+          <li  id="ow-tab" class="active">
+            <a data-toggle="tab" href="#overwatch">
+              <img src='assets/images/overwatchlogo.png' alt="" />
+            </a>
+          </li>
+          <li id="d3-tab">
+            <a data-toggle="tab" href="#d3">
+              <img src='assets/images/diablologo.png' alt="" />
+            </a>
+          </li>
+          <li id="wow-tab">
+            <a data-toggle="tab" href="#wow">
+              <img src='assets/images/WoWlogo.png' alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="container">
-      <div class="row game" id="overwatch">
-        <div class="col-md-2">
-          <!-- <h1>Overwatch</h1> -->
-          <!-- <img src="http://img03.deviantart.net/6059/i/2016/155/4/0/overwatch_logo_by_feeerieke-da4xuzp.png" alt="" /> -->
-          <img src='assets/images/overwatchlogo.png' alt="" />
-        </div>
-        <div class="col-md-8">
-          <h2>Fight For The Future</h2>
-	  <h3>Soldiers. Scientists. Adventurers. Oddities. </h3>
-          <p>In a time of global crisis, an international task force of heroes banded together to restore peace in a war-torn world: OVERWATCH. Overwatch ended the crisis and helped maintain peace in the decades that followed, inspiring an era of exploration, innovation, and discovbery. But, after many years, Overwatch's influence waned and it was eventually disbanded. Now conflict is rising across the world again and the call has gone out to heroes both old and new. </p>
-           <h3> Are you with us?</h3>
-          <div class="characters row">
-            <div class="col-md-2" id="lemonz">
-              <img src='assets/images/pharah.png' alt="" />
-            </div>
-            <div class="col-md-2" id="zertan">
-              <img src='assets/images/Torbjorn.png' alt="" />
-            </div>
-            <div class="col-md-2" id="vyse">
-              <img src='assets/images/Ana.png' alt="" />
-            </div>
-            <div class="col-md-2" id="tweedl">
-              <img src='assets/images/zarya.png' alt="" />
-            </div>
-            <div class="col-md-2" id="xyvos">
-              <img src='assets/images/Reinhardt.png' alt="" />
-            </div>
+      <div class="row game">
+
+        <div class="tab-content">
+          <div id="overwatch" class="tab-pane fade in active">
+          <div class="col-md-2">
+            <img src='assets/images/overwatchlogo.png' alt="" />
           </div>
-          <div class="character-links">
-            <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Lemonz-11731" target="_blank">Lemonz</a>
-            <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Zertan-1943" target="_blank">Zertan</a>
-            <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Vyse-1907" target="_blank">Vyse</a>
-            <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/IamTweed-1232" target="_blank">Tweedl</a>
-            <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Xyvos-1219" target="_blank">Xyvos</a>
+          <div class="col-md-8">
+            <h2>Fight For The Future</h2>
+  	        <h3>Soldiers. Scientists. Adventurers. Oddities. </h3>
+            <p>In a time of global crisis, an international task force of heroes banded together to restore peace in a war-torn world: OVERWATCH. Overwatch ended the crisis and helped maintain peace in the decades that followed, inspiring an era of exploration, innovation, and discovbery. But, after many years, Overwatch's influence waned and it was eventually disbanded. Now conflict is rising across the world again and the call has gone out to heroes both old and new. </p>
+             <h3> Are you with us?</h3>
+            <div class="characters row">
+              <div class="col-md-2" id="lemonz">
+                <a href="http://masteroverwatch.com/profile/pc/us/Lemonz-11731" target="_blank">
+                  <img src='assets/images/pharah.png' alt="" />
+                  <p>Lemonz</p>
+                </a>
+              </div>
+              <div class="col-md-2" id="zertan">
+                <a href="http://masteroverwatch.com/profile/pc/us/Zertan-1943" target="_blank">
+                  <img src='assets/images/Torbjorn.png' alt="" />
+                  <p>Zertan</p>
+                </a>
+              </div>
+              <div class="col-md-2" id="tweedl">
+                <a href="http://masteroverwatch.com/profile/pc/us/IamTweed-1232" target="_blank">
+                  <img src="http://vignette2.wikia.nocookie.net/overwatch/images/5/53/Junkrat_portrait.png/revision/latest?cb=20160429040823" alt="" />
+                  <p>Tweedl</p>
+                </a>
+                <!-- <img src='assets/images/zarya.png' alt="" /> -->
+              </div>
+              <div class="col-md-2" id="vyse">
+                <a href="http://masteroverwatch.com/profile/pc/us/Vyse-1907" target="_blank">
+                  <img src='assets/images/Ana.png' alt="" />
+                  <p>Vyse</p>
+                </a>
+              </div>
+              <div class="col-md-2" id="xyvos">
+                <a href="http://masteroverwatch.com/profile/pc/us/Xyvos-1219" target="_blank">
+                  <img src='assets/images/Reinhardt.png' alt="" />
+                  <p>Xyvos</p>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="character-links">
+              <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Lemonz-11731" target="_blank">Lemonz</a>
+              <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Zertan-1943" target="_blank">Zertan</a>
+              <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Vyse-1907" target="_blank">Vyse</a>
+              <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/IamTweed-1232" target="_blank">Tweedl</a>
+              <a class="btn btn-defualt col-md-2" href="http://masteroverwatch.com/profile/pc/us/Xyvos-1219" target="_blank">Xyvos</a>
+            </div> -->
           </div>
         </div>
-      </div>
 
-      <div class="row game" id="d3">
-        <div class="col-md-2">
-          <!-- <h1>Diablo 3</h1> -->
-          <!-- <img src="http://vignette2.wikia.nocookie.net/diablo/images/a/a9/Diablo_III_Large_transparency.png/revision/latest?cb=20081026182718" alt="" /> -->
-          <img src='assets/images/diablologo.png' alt="" />
+          <div id="d3" class="tab-pane fade in active">
+            <div class="col-md-2">
+              <img src='assets/images/diablologo.png' alt="" />
+            </div>
+          <div class="col-md-8">
+            <h2>Diablo 3 </h2>
+            <p>The quick brown demon fox jumps over the lazy dogspawn? </p>
+
+            <h2Diablo XXX</h2>
+            <p>Look, just because I don't be givin' no man a foot massage don't make it right for the Wanderor to right my out of his "Always to the East" Speach! </p>
+          </div>
         </div>
-        <div class="col-md-8">
-          <h2>Diablo 3 </h2>
-          <p>The quick brown demon fox jumps over the lazy dogspawn? </p>
 
-          <h2Diablo XXX</h2>
-          <p>Look, just because I don't be givin' no man a foot massage don't make it right for the Wanderor to right my out of his "Always to the East" Speach! </p>
-        </div>
-      </div>
+          <div id="wow" class="tab-pane fade in active">
+          <div class="col-md-2">
+            <img src='assets/images/WoWlogo.png' alt="" />
+          </div>
+          <div class="col-md-8">
+            <h2>Hold on to your butts</h2>
+            <p>WOW Filler. Nerds. ETC ETC </p>
 
-      <div class="row game" id="wow">
-        <div class="col-md-2">
-          <!-- <h1>World of Warcraft</h1> -->
-          <!-- <img src="http://thenoob.net/wp-content/uploads/WoWlogo_transparency.png" alt="" /> -->
-          <img src='assets/images/WoWlogo.png' alt="" />
-        </div>
-        <div class="col-md-8">
-          <h2>Hold on to your butts</h2>
-          <p>WOW Filler. Nerds. ETC ETC </p>
+            <h2>We happy?</h2>
+            <p>Expansion etc etc etc </p>
 
-          <h2>We happy?</h2>
-          <pExpansion etc etc etc </p>
-
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 
 </body>
